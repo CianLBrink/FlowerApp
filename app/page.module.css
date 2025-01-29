@@ -1,0 +1,130 @@
+/* Dashboard styles */
+.dashboard {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .active {
+    background-color: #ffeb3b;
+    color: #000;
+  }
+  
+  /* General Flower Style */
+  .flower {
+    position: absolute;
+    pointer-events: none;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+    animation: fadeInOut 5s linear infinite, rotateAndMove 5s ease-in-out infinite;
+  }
+  
+  /* Individual Flowers */
+  .default_flower::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("/Flower-icon.png") no-repeat center/contain;
+    background-size: contain;
+  }
+  
+  .roses::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("/Rose-icon.png") no-repeat center/contain;
+    background-size: contain;
+  }
+  
+  .tulips::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("/Tulip-icon.png") no-repeat center/contain;
+    background-size: contain;
+  }
+  
+  .lilies::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("/Lily-icon.png") no-repeat center/contain;
+    background-size: contain;
+  }
+  
+  .white_rose::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("/White-Rose-icon.png") no-repeat center/contain;
+    background-size: contain;
+  }
+  
+  .pink_rose::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("/Pink-Rose-icon.png") no-repeat center/contain;
+    background-size: contain;
+  }
+  
+  /* Animations */
+  @keyframes fadeInOut {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    20%,
+    80% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rotateAndMove {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    100% {
+      transform: translate(30px, 30px) rotate(15deg);
+    }
+  }
+  
