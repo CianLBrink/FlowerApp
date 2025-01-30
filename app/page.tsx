@@ -79,8 +79,11 @@ export default function Home() {
 
   return (
     <div>
-      {/* "For You ❤️" Rainbow Text */}
-      <h1 className={styles.rainbowText}>For You ❤️</h1>
+      {/* "The Love i Have For You ❤️" Rainbow Text */}
+      <h1 className={styles.rainbowText}>The Love I Have For You ❤️</h1>
+
+      {/* "Happy Valentines Day ❤️" Rainbow Text */}
+      <h1 className={`${styles.rainbowText} ${styles.valentineText}`}>Happy Valentines Day ❤️</h1>
 
       {/* Tap Area to Show Dashboard */}
       <div className={styles.tapArea} onClick={() => setShowDashboard(!showDashboard)}>

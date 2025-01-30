@@ -17,6 +17,11 @@
   background-size: 300%;
 }
 
+/* "Happy Valentines Day ❤️" Positioned Below */
+.valentineText {
+  top: 20%; /* Moves it lower to avoid overlap */
+}
+
 /* Rainbow Animation */
 @keyframes rainbowAnimation {
   0% { background-position: 0% 50%; }
@@ -91,6 +96,7 @@
   background-color: #ffeb3b;
   color: #000;
 }
+
   
   /* General Flower Style */
   .flower {
